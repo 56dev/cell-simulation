@@ -1,0 +1,166 @@
+[gd_scene load_steps=5 format=3 uid="uid://6pk0jckr5467"]
+
+[ext_resource type="Script" path="res://Scripts/cell_membrane.gd" id="1_68ymf"]
+[ext_resource type="Texture2D" uid="uid://draufjaln5meq" path="res://icon.svg" id="2_sw6cm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ym0st"]
+radius = 24.1868
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4oipp"]
+size = Vector2(291, 20)
+
+[node name="scene_cell" type="Node2D"]
+
+[node name="Cell" type="Node2D" parent="."]
+
+[node name="CellMembrane" type="RigidBody2D" parent="Cell"]
+script = ExtResource("1_68ymf")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(-24, -95)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(-58, -80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D2"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D2"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(-82, -43)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D3"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D3"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D4" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(-87, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D4"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D4"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D5" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(-77, 43)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D5"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D5"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D6" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(-54, 69)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D6"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D6"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D7" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(-18, 89)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D7"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D7"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D8" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(20, 91)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D8"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D8"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D9" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(58, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D9"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D9"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D10" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(79, 34)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D10"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D10"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D11" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(81, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D11"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D11"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D12" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(70, -42)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D12"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D12"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D13" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(43, -75)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D13"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D13"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="RigidBody2D14" type="RigidBody2D" parent="Cell/CellMembrane"]
+position = Vector2(9, -93)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell/CellMembrane/RigidBody2D14"]
+shape = SubResource("CircleShape2D_ym0st")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Cell/CellMembrane/RigidBody2D14"]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_sw6cm")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 233)
+
+[node name="test" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1.5, 0)
+shape = SubResource("RectangleShape2D_4oipp")
